@@ -7,7 +7,7 @@ RUN mkdir -p /opt && \
     cd /opt && \
     curl https://archive.apache.org/dist/spark/spark-2.1.0/spark-2.1.0-bin-hadoop2.6.tgz | \
         tar -zx && \
-    ln -s spark-2.1.0-bin-hadoop2.6 spark && \
+    ln -s spark-${spark_ver}-bin-hadoop2.6 spark && \
     echo Spark ${spark_ver} installed in /opt
 
 
